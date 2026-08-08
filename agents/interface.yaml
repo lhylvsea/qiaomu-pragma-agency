@@ -1,0 +1,56 @@
+interface:
+  display_name: "Pragma Agency Agents"
+  short_description: "在 Windows 上自动安装、修复、验证并启动带 270 个专家的 Pragma"
+  default_prompt: "使用 $qiaomu-pragma-agency 在 Windows 上配置 Pragma Agency Agents。先检查 Node.js、Git、Pragma 和 .pragma 数据；写入前备份；自动导入包内 agency-agents-all.pragma，使 270 个 Expert 与 270 个 Skill 能力可用；按需导入制造运营团队；修复 unresolved local dependencies；创建桌面启动快捷方式；最后验证 ready Bundle、isRefPending=false、启动进程和端口。不要覆盖现有用户数据，不要索取或上传凭据。"
+  examples:
+    - "安装 Pragma Agency Agents，让 270 个专家开箱可用"
+    - "修复 Pragma 的 unresolved local dependencies，再创建 Mission"
+    - "把 Pragma 启动脚本创建成桌面快捷方式"
+    - "升级专家 Bundle，保留本地数据并验证 ready 状态"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets: ["openai", "claude", "generic", "agent-skills-compatible", "vscode"]
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "powershell"
+  trust:
+    source_tier: "bundled-and-reviewed"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow read-only source review and explicit clone of named upstream repositories"
+    generated_public_claims: "evidence-bound"
+  permissions:
+    network: "named GitHub repositories and npm registry only"
+    file_write: "user Pragma directory, %USERPROFILE%\\.pragma backup/state, and Desktop shortcut only"
+    subprocess: "PowerShell, Git, Node.js, Corepack pnpm"
+    interactive: "only when local runtime/authentication is missing"
+  degradation:
+    openai: "metadata-adapter"
+    claude: "neutral-source-plus-adapter"
+    generic: "neutral-source"
+    agent-skills-compatible: "canonical-source"
+    vscode: "neutral-source-plus-review-notes"
+gates:
+  scaffold:
+    - "SKILL.md frontmatter"
+    - "README hook and natural trigger examples"
+    - "clear exclusions"
+  production:
+    - "agents/interface.yaml aligns with SKILL.md"
+    - "evals/trigger_cases.json"
+    - "scripts/validate_skill.py"
+    - "Windows installation and verification scripts"
+    - "root-only discoverable SKILL.md entrypoint"
+  library:
+    - "reports/skill-ir.json"
+    - "reports/prior-art-research.md"
+    - "portability and degradation notes"
+  governed:
+    - "trust boundary"
+    - "rollback boundary"
+    - "secret scan"
+    - "public claim guard"
+    - "feature-branch publication"
+    - "remote discovery and clean install verification"
