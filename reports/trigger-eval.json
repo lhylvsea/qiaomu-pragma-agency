@@ -1,0 +1,172 @@
+{
+  "ok": true,
+  "threshold": 0.34,
+  "description_concepts": [
+    "action",
+    "agency",
+    "pragma"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "在 Windows 上安装 Pragma，并把 agency-agents 的 270 个专家默认导入进去",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "agency",
+          "pragma"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Pragma 提示 unresolved local dependencies，帮我修好后能创建 Mission",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "pragma"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把 Pragma 的运行脚本放到桌面，双击就能启动",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "pragma"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "升级 Agency Agents Bundle，保留现有 .pragma 数据并检查 ready 状态",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "agency",
+          "pragma"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "导入 manufacturing operations expert team 到 Pragma",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "pragma"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "只帮我分析 agency-agents 的某个专家提示词，不要安装 Pragma",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "agency",
+          "pragma"
+        ],
+        "negative_pattern": "不要安装"
+      },
+      {
+        "prompt": "为 Pragma 设计一个新的网页界面，不改本地运行环境",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "pragma"
+        ],
+        "negative_pattern": "不改本地运行环境"
+      },
+      {
+        "prompt": "在 Linux 服务器上部署 Pragma SaaS",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "pragma"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "在 Codex 中安装一个普通 Markdown Skill，不涉及 Pragma",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "pragma"
+        ],
+        "negative_pattern": "不涉及 Pragma"
+      },
+      {
+        "prompt": "给 Electron 应用创建快捷方式，但应用不是 Pragma",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "pragma"
+        ],
+        "negative_pattern": "不是 Pragma"
+      },
+      {
+        "prompt": "检查 Pragma 的源代码类型错误，但不导入专家 Bundle",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "agency",
+          "pragma"
+        ],
+        "negative_pattern": "不导入专家 Bundle"
+      }
+    ]
+  }
+}

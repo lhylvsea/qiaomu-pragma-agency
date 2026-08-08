@@ -1,0 +1,1095 @@
+{
+  "ok": true,
+  "complete": true,
+  "researched_at": "2026-08-09",
+  "queries": [
+    "Windows local desktop app agent bundle installation shortcut",
+    "Pragma agent expert bundle import local capability skill"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "Windows local desktop app agent bundle installation shortcut",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 15,
+      "skillsmp_candidates": 9
+    },
+    {
+      "query": "Pragma agent expert bundle import local capability skill",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 12,
+      "skillsmp_candidates": 10
+    }
+  ],
+  "candidate_family_count": 45,
+  "candidates": [
+    {
+      "family_key": "thisnick/agent-rdp:agent-rdp",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "thisnick/agent-rdp",
+        "skill_name": "agent-rdp",
+        "family_key": "thisnick/agent-rdp:agent-rdp",
+        "skills_sh_installs": 279,
+        "skills_sh_installs_display": "279",
+        "skills_sh_url": "https://skills.sh/thisnick/agent-rdp/agent-rdp"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jorgealves/agent_skills:agent-capability-discovery",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "jorgealves/agent_skills",
+        "skill_name": "agent-capability-discovery",
+        "family_key": "jorgealves/agent_skills:agent-capability-discovery",
+        "skills_sh_installs": 208,
+        "skills_sh_installs_display": "208",
+        "skills_sh_url": "https://skills.sh/jorgealves/agent_skills/agent-capability-discovery"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "popup-studio-ai/bkit-claude-code:desktop-app",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "popup-studio-ai/bkit-claude-code",
+        "skill_name": "desktop-app",
+        "family_key": "popup-studio-ai/bkit-claude-code:desktop-app",
+        "skills_sh_installs": 206,
+        "skills_sh_installs_display": "206",
+        "skills_sh_url": "https://skills.sh/popup-studio-ai/bkit-claude-code/desktop-app"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "charleswiltgen/axiom:axiom-app-shortcuts-ref",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "charleswiltgen/axiom",
+        "skill_name": "axiom-app-shortcuts-ref",
+        "family_key": "charleswiltgen/axiom:axiom-app-shortcuts-ref",
+        "skills_sh_installs": 183,
+        "skills_sh_installs_display": "183",
+        "skills_sh_url": "https://skills.sh/charleswiltgen/axiom/axiom-app-shortcuts-ref"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "starchild-ai-agent/official-skills:agent-import",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "starchild-ai-agent/official-skills",
+        "skill_name": "agent-import",
+        "family_key": "starchild-ai-agent/official-skills:agent-import",
+        "skills_sh_installs": 173,
+        "skills_sh_installs_display": "173",
+        "skills_sh_url": "https://skills.sh/starchild-ai-agent/official-skills/agent-import"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nousresearch/hermes-agent:computer-use",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "nousresearch/hermes-agent",
+        "skill_name": "computer-use",
+        "family_key": "nousresearch/hermes-agent:computer-use",
+        "skills_sh_installs": 163,
+        "skills_sh_installs_display": "163",
+        "skills_sh_url": "https://skills.sh/nousresearch/hermes-agent/computer-use"
+      },
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "computer-use",
+        "author": "NousResearch",
+        "description": "Drive the user's desktop in the background — clicking, typing,\nscrolling, dragging — without stealing the cursor, keyboard focus,\nor switching virtual desktops / Spaces. Cross-platform: macOS,\nWindows, Linux. Works with any tool-capable model. Load this skill\nwhenever the `computer_use` tool is available.",
+        "content_language": "en",
+        "github_url": "https://github.com/NousResearch/hermes-agent/tree/main/skills/autonomous-ai-agents/computer-use",
+        "skillsmp_url": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-autonomous-ai-agents-computer-use",
+        "repo_stars": 227004,
+        "catalog_updated_at": "2026-07-29T19:19:37+00:00",
+        "source_key": "nousresearch/hermes-agent:skills/autonomous-ai-agents/computer-use",
+        "family_key": "nousresearch/hermes-agent:computer-use",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skills.sh",
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "microsoft/win-dev-skills:winui-packaging",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "microsoft/win-dev-skills",
+        "skill_name": "winui-packaging",
+        "family_key": "microsoft/win-dev-skills:winui-packaging",
+        "skills_sh_installs": 109,
+        "skills_sh_installs_display": "109",
+        "skills_sh_url": "https://skills.sh/microsoft/win-dev-skills/winui-packaging"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "diegosouzapw/omniroute:cli-serve",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "diegosouzapw/omniroute",
+        "skill_name": "cli-serve",
+        "family_key": "diegosouzapw/omniroute:cli-serve",
+        "skills_sh_installs": 105,
+        "skills_sh_installs_display": "105",
+        "skills_sh_url": "https://skills.sh/diegosouzapw/omniroute/cli-serve"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "oimiragieo/agent-studio:react-expert",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "oimiragieo/agent-studio",
+        "skill_name": "react-expert",
+        "family_key": "oimiragieo/agent-studio:react-expert",
+        "skills_sh_installs": 70,
+        "skills_sh_installs_display": "70",
+        "skills_sh_url": "https://skills.sh/oimiragieo/agent-studio/react-expert"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "full-stack-skills/tauri-skills:tauri-app-global-shortcut",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "full-stack-skills/tauri-skills",
+        "skill_name": "tauri-app-global-shortcut",
+        "family_key": "full-stack-skills/tauri-skills:tauri-app-global-shortcut",
+        "skills_sh_installs": 60,
+        "skills_sh_installs_display": "60",
+        "skills_sh_url": "https://skills.sh/full-stack-skills/tauri-skills/tauri-app-global-shortcut"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "scientiacapital/skills:agent-capability-matrix",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "scientiacapital/skills",
+        "skill_name": "agent-capability-matrix",
+        "family_key": "scientiacapital/skills:agent-capability-matrix",
+        "skills_sh_installs": 57,
+        "skills_sh_installs_display": "57",
+        "skills_sh_url": "https://skills.sh/scientiacapital/skills/agent-capability-matrix"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "theorcdev/8bitcn-ui:bundle-barrel-imports",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "theorcdev/8bitcn-ui",
+        "skill_name": "bundle-barrel-imports",
+        "family_key": "theorcdev/8bitcn-ui:bundle-barrel-imports",
+        "skills_sh_installs": 40,
+        "skills_sh_installs_display": "40",
+        "skills_sh_url": "https://skills.sh/theorcdev/8bitcn-ui/bundle-barrel-imports"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "theorcdev/8bitcn-ui:bundle-dynamic-imports",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "theorcdev/8bitcn-ui",
+        "skill_name": "bundle-dynamic-imports",
+        "family_key": "theorcdev/8bitcn-ui:bundle-dynamic-imports",
+        "skills_sh_installs": 35,
+        "skills_sh_installs_display": "35",
+        "skills_sh_url": "https://skills.sh/theorcdev/8bitcn-ui/bundle-dynamic-imports"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "letta-ai/skills:install-windows-3-11",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "letta-ai/skills",
+        "skill_name": "install-windows-3-11",
+        "family_key": "letta-ai/skills:install-windows-3-11",
+        "skills_sh_installs": 33,
+        "skills_sh_installs_display": "33",
+        "skills_sh_url": "https://skills.sh/letta-ai/skills/install-windows-3-11"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anhao/codedrobe-codex-skill:codedrobe-codex-theme",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "anhao/codedrobe-codex-skill",
+        "skill_name": "codedrobe-codex-theme",
+        "family_key": "anhao/codedrobe-codex-skill:codedrobe-codex-theme",
+        "skills_sh_installs": 26,
+        "skills_sh_installs_display": "26",
+        "skills_sh_url": "https://skills.sh/anhao/codedrobe-codex-skill/codedrobe-codex-theme"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "forcedotcom/sf-skills:experience-ui-bundle-localize",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "forcedotcom/sf-skills",
+        "skill_name": "experience-ui-bundle-localize",
+        "family_key": "forcedotcom/sf-skills:experience-ui-bundle-localize",
+        "skills_sh_installs": 26,
+        "skills_sh_installs_display": "26",
+        "skills_sh_url": "https://skills.sh/forcedotcom/sf-skills/experience-ui-bundle-localize"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jamie-bitflight/claude_skills:agent-capability-analyzer",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "jamie-bitflight/claude_skills",
+        "skill_name": "agent-capability-analyzer",
+        "family_key": "jamie-bitflight/claude_skills:agent-capability-analyzer",
+        "skills_sh_installs": 26,
+        "skills_sh_installs_display": "26",
+        "skills_sh_url": "https://skills.sh/jamie-bitflight/claude_skills/agent-capability-analyzer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "full-statck-skills/tauri-skills:tauri-app-global-shortcut",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "full-statck-skills/tauri-skills",
+        "skill_name": "tauri-app-global-shortcut",
+        "family_key": "full-statck-skills/tauri-skills:tauri-app-global-shortcut",
+        "skills_sh_installs": 22,
+        "skills_sh_installs_display": "22",
+        "skills_sh_url": "https://skills.sh/full-statck-skills/tauri-skills/tauri-app-global-shortcut"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "fei-away/codex-dream-skin:codex-dream-skin",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "fei-away/codex-dream-skin",
+        "skill_name": "codex-dream-skin",
+        "family_key": "fei-away/codex-dream-skin:codex-dream-skin",
+        "skills_sh_installs": 21,
+        "skills_sh_installs_display": "21",
+        "skills_sh_url": "https://skills.sh/fei-away/codex-dream-skin/codex-dream-skin"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "moazbuilds/pragma-post-writer:pragma-post-writer",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "moazbuilds/pragma-post-writer",
+        "skill_name": "pragma-post-writer",
+        "family_key": "moazbuilds/pragma-post-writer:pragma-post-writer",
+        "skills_sh_installs": 15,
+        "skills_sh_installs_display": "15",
+        "skills_sh_url": "https://skills.sh/moazbuilds/pragma-post-writer/pragma-post-writer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "megastep/codex-skills:axiom-app-shortcuts-ref",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "megastep/codex-skills",
+        "skill_name": "axiom-app-shortcuts-ref",
+        "family_key": "megastep/codex-skills:axiom-app-shortcuts-ref",
+        "skills_sh_installs": 10,
+        "skills_sh_installs_display": "10",
+        "skills_sh_url": "https://skills.sh/megastep/codex-skills/axiom-app-shortcuts-ref"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openakita/openakita:desktop-window",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "openakita/openakita",
+        "skill_name": "desktop-window",
+        "family_key": "openakita/openakita:desktop-window",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/openakita/openakita/desktop-window"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openakita/openakita:import-agent",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "openakita/openakita",
+        "skill_name": "import-agent",
+        "family_key": "openakita/openakita:import-agent",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/openakita/openakita/import-agent"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ortus-boxlang/skills:boxlang-runtime-desktop-electron",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "ortus-boxlang/skills",
+        "skill_name": "boxlang-runtime-desktop-electron",
+        "family_key": "ortus-boxlang/skills:boxlang-runtime-desktop-electron",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/ortus-boxlang/skills/boxlang-runtime-desktop-electron"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mcdp-adk/skills:agent-capabilities",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "mcdp-adk/skills",
+        "skill_name": "agent-capabilities",
+        "family_key": "mcdp-adk/skills:agent-capabilities",
+        "skills_sh_installs": 6,
+        "skills_sh_installs_display": "6",
+        "skills_sh_url": "https://skills.sh/mcdp-adk/skills/agent-capabilities"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "practicalswan/agent-skills:agent-task-mapping",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Pragma agent expert bundle import local capability skill",
+        "owner_repo": "practicalswan/agent-skills",
+        "skill_name": "agent-task-mapping",
+        "family_key": "practicalswan/agent-skills:agent-task-mapping",
+        "skills_sh_installs": 6,
+        "skills_sh_installs_display": "6",
+        "skills_sh_url": "https://skills.sh/practicalswan/agent-skills/agent-task-mapping"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "christian-katzmann/app-it:app-it-windows",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "Windows local desktop app agent bundle installation shortcut",
+        "owner_repo": "christian-katzmann/app-it",
+        "skill_name": "app-it-windows",
+        "family_key": "christian-katzmann/app-it:app-it-windows",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/christian-katzmann/app-it/app-it-windows"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:crabbox",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "crabbox",
+        "author": "openclaw",
+        "description": "Crabbox/Testbox remote proof for OpenClaw: trusted-source routing, untrusted isolation, Linux/macOS/Windows/WSL2, live E2E, desktop, diagnostics, cleanup.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/crabbox",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-crabbox",
+        "repo_stars": 385453,
+        "catalog_updated_at": "2026-07-15T07:52:05+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/crabbox",
+        "family_key": "openclaw/openclaw:crabbox",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:openclaw-parallels-smoke",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openclaw-parallels-smoke",
+        "author": "openclaw",
+        "description": "Prepare, snapshot, run, rerun, debug, or interpret OpenClaw Parallels guest install, onboarding, gateway smoke, and upgrade checks across macOS, Windows, and Linux.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-parallels-smoke",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-parallels-smoke",
+        "repo_stars": 385453,
+        "catalog_updated_at": "2026-07-15T06:15:57+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/openclaw-parallels-smoke",
+        "family_key": "openclaw/openclaw:openclaw-parallels-smoke",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "react/react:feature-flags",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "feature-flags",
+        "author": "react",
+        "description": "Use when feature flag tests fail, flags need updating, understanding @gate pragmas, debugging channel-specific test failures, or adding new flags to React.",
+        "content_language": "en",
+        "github_url": "https://github.com/react/react/tree/main/.claude/skills/feature-flags",
+        "skillsmp_url": "https://skillsmp.com/creators/react/react/claude-skills-feature-flags",
+        "repo_stars": 247094,
+        "catalog_updated_at": "2026-01-24T01:16:06+00:00",
+        "source_key": "react/react:.claude/skills/feature-flags",
+        "family_key": "react/react:feature-flags",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:cisco-ios-patterns",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "cisco-ios-patterns",
+        "author": "affaan-m",
+        "description": "Cisco IOS and IOS-XE review patterns for show commands, config hierarchy, wildcard masks, ACL placement, interface hygiene, and safe change-window verification.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/cisco-ios-patterns",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-cisco-ios-patterns",
+        "repo_stars": 238527,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/cisco-ios-patterns",
+        "family_key": "affaan-m/ecc:cisco-ios-patterns",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:context-budget",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "context-budget",
+        "author": "affaan-m",
+        "description": "Audits Claude Code context window consumption across agents, skills, MCP servers, and rules. Identifies bloat, redundant components, and produces prioritized token-savings recommendations.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/context-budget",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-context-budget",
+        "repo_stars": 238527,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/context-budget",
+        "family_key": "affaan-m/ecc:context-budget",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:docker-patterns",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "docker-patterns",
+        "author": "affaan-m",
+        "description": "Docker and Docker Compose patterns for local development, hardened CLI installer harnesses, container security, networking, volumes, and multi-service orchestration. Use when creating or reviewing Dockerfiles and Compose services, testing installers across Linux distributions, or planning accurate native macOS and Windows validation.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/docker-patterns",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-docker-patterns",
+        "repo_stars": 238527,
+        "catalog_updated_at": "2026-08-06T20:52:39+00:00",
+        "source_key": "affaan-m/ecc:skills/docker-patterns",
+        "family_key": "affaan-m/ecc:docker-patterns",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:generating-python-installer",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "generating-python-installer",
+        "author": "affaan-m",
+        "description": "Commercial-grade Python installer expert for Windows: Nuitka extreme compilation, dist slimming, DLL footprint analysis, and Inno Setup packaging to ship the smallest, fastest installers. Use only for advanced packaging/optimization (minimal size, fast startup), not basic script-to-exe conversion. 中文触发：Nuitka 极限优化、Python 商业打包、极限编译 Python、dist 瘦身、DLL 分析、最小安装包、最快启动、商业级打包风格",
+        "content_language": "mul",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/generating-python-installer",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-generating-python-installer",
+        "repo_stars": 238527,
+        "catalog_updated_at": "2026-06-16T01:17:18+00:00",
+        "source_key": "affaan-m/ecc:skills/generating-python-installer",
+        "family_key": "affaan-m/ecc:generating-python-installer",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:terminal-opener",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "terminal-opener",
+        "author": "affaan-m",
+        "description": "Open an executable and its argument array in a visible terminal window through a reusable, shell-free launch plan with dry-run, JSON, capability detection, detached fallback, and standalone recovery modes. Use when Codex needs to open an interactive CLI, SSH session, local development process, sandbox, or other argv-based command in a new host terminal; diagnose whether a supported terminal is available; or provide an actionable plan when the requested terminal is unsupported.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/terminal-opener",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-terminal-opener",
+        "repo_stars": 238527,
+        "catalog_updated_at": "2026-08-06T21:24:34+00:00",
+        "source_key": "affaan-m/ecc:skills/terminal-opener",
+        "family_key": "affaan-m/ecc:terminal-opener",
+        "aliases": [],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:windows-desktop-e2e",
+      "queries": [
+        "Windows local desktop app agent bundle installation shortcut"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "windows-desktop-e2e",
+        "author": "affaan-m",
+        "description": "E2E testing for Windows native desktop apps (WPF, WinForms, Win32/MFC, Qt) using pywinauto and Windows UI Automation.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/windows-desktop-e2e",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-windows-desktop-e2e",
+        "repo_stars": 238527,
+        "catalog_updated_at": "2026-06-15T18:09:17+00:00",
+        "source_key": "affaan-m/ecc:skills/windows-desktop-e2e",
+        "family_key": "affaan-m/ecc:windows-desktop-e2e",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/windows-desktop-e2e"
+          }
+        ],
+        "query": "Windows local desktop app agent bundle installation shortcut"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "dagger/dagger:adding-pragmas",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "adding-pragmas",
+        "author": "dagger",
+        "description": "Add or change a Dagger module pragma/directive/decorator — the `@check`, `@generate`, `@up`, `@agent`, `@defaultPath`, `@ignorePatterns` family that authors write as `// +check` (Go), `@check()` (TypeScript), `@check` (Python), or `@check` (Dang). Use when adding a new marker, wiring an existing one into another SDK, or debugging why a marker set in module source doesn't reach the engine.",
+        "content_language": "en",
+        "github_url": "https://github.com/dagger/dagger/tree/main/skills/adding-pragmas",
+        "skillsmp_url": "https://skillsmp.com/creators/dagger/dagger/skills-adding-pragmas",
+        "repo_stars": 16138,
+        "catalog_updated_at": "2026-08-06T16:00:06+00:00",
+        "source_key": "dagger/dagger:skills/adding-pragmas",
+        "family_key": "dagger/dagger:adding-pragmas",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "unicomai/wanwu:self-awareness",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "self-awareness",
+        "author": "UnicomAI",
+        "description": "Claude Science's own session database schema and SDK surface for introspection via host.query(). Load this when you need to query your own conversation history, token usage, cost accounting, execution log, or artifact metadata beyond what host.frames()/host.artifacts() provide — e.g. \"how many tokens has this session used\", \"what was my last tool call\", \"list every file I've written\", \"where are messages stored\", \"what tables can I query\", \"inspect frames.context_data\", or any time you're about to PRAGMA-probe the Claude Science metadata DB to discover its schema.",
+        "content_language": "en",
+        "github_url": "https://github.com/UnicomAI/wanwu/tree/main/configs/microservice/bff-service/configs/agent-skills/claude-science/self-awareness",
+        "skillsmp_url": "https://skillsmp.com/creators/unicomai/wanwu/configs-microservice-bff-service-configs-agent-skills-claude-science-self-awareness",
+        "repo_stars": 2586,
+        "catalog_updated_at": "2026-07-10T02:32:46+00:00",
+        "source_key": "unicomai/wanwu:configs/microservice/bff-service/configs/agent-skills/claude-science/self-awareness",
+        "family_key": "unicomai/wanwu:self-awareness",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nvidia-nemo/rl:testing",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "testing",
+        "author": "NVIDIA-NeMo",
+        "description": "Testing conventions for NeMo-RL. Covers Ray actor coverage pragmas, nightly test requirements, and recipe naming rules.",
+        "content_language": "en",
+        "github_url": "https://github.com/NVIDIA-NeMo/RL/tree/main/.agents/contributor-skills/testing",
+        "skillsmp_url": "https://skillsmp.com/creators/nvidia-nemo/rl/agents-contributor-skills-testing",
+        "repo_stars": 1885,
+        "catalog_updated_at": "2026-05-25T06:02:05+00:00",
+        "source_key": "nvidia-nemo/rl:.agents/contributor-skills/testing",
+        "family_key": "nvidia-nemo/rl:testing",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "childrentime/reactuse:hook-test",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "hook-test",
+        "author": "childrentime",
+        "description": "Write and run jest tests for a hook in @reactuses/core, following the repo's conventions (co-located index.spec.ts, renderHook/act, fake timers, the .test/ helpers, and the SSR jest-environment pragma). Triggers on \"write a test\", \"add test coverage\", \"fix the failing test\", or \"test this hook\".",
+        "content_language": "en",
+        "github_url": "https://github.com/childrentime/reactuse/tree/main/.claude/skills/hook-test",
+        "skillsmp_url": "https://skillsmp.com/creators/childrentime/reactuse/claude-skills-hook-test",
+        "repo_stars": 1038,
+        "catalog_updated_at": "2026-06-25T03:23:37+00:00",
+        "source_key": "childrentime/reactuse:.claude/skills/hook-test",
+        "family_key": "childrentime/reactuse:hook-test",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ferroxlabs/wayland:sqlite-specialist",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "sqlite-specialist",
+        "author": "FerroxLabs",
+        "description": "SQLite expertise for application development covering WAL mode configuration, concurrent access patterns, FTS5 full-text search, JSON support, virtual tables, PRAGMA optimization, backup strategies, file locking behavior, embedding patterns for desktop and mobile apps, migration strategies, and understanding size and concurrency limits.\nUse when the user asks about sqlite specialist, sqlite specialist best practices, or needs guidance on sqlite specialist implementation.\nDo NOT use when the user needs a different specialized skill or is asking about an unrelated technology domain.",
+        "content_language": "en",
+        "github_url": "https://github.com/FerroxLabs/wayland/tree/main/src/process/resources/skills-library/bodies/skills/backend-systems/sqlite-specialist",
+        "skillsmp_url": "https://skillsmp.com/creators/ferroxlabs/wayland/src-process-resources-skills-library-bodies-skills-backend-systems-sqlite-specialist",
+        "repo_stars": 569,
+        "catalog_updated_at": "2026-06-07T16:09:17+00:00",
+        "source_key": "ferroxlabs/wayland:src/process/resources/skills-library/bodies/skills/backend-systems/sqlite-specialist",
+        "family_key": "ferroxlabs/wayland:sqlite-specialist",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "vishiri/fantasia-archive:fantasia-flatten-database-schemas",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "fantasia-flatten-database-schemas",
+        "author": "vishiri",
+        "description": "Collapses .faproject SQLite PRAGMA user_version ladders into a single bootstrap schema (procedure sets max to 1) during pre-release dev resets. Use when the user asks to flatten database schemas, reset migrations, or squash schema versions before wider release.",
+        "content_language": "en",
+        "github_url": "https://github.com/vishiri/fantasia-archive/tree/master/.cursor/skills/fantasia-flatten-database-schemas",
+        "skillsmp_url": "https://skillsmp.com/creators/vishiri/fantasia-archive/cursor-skills-fantasia-flatten-database-schemas",
+        "repo_stars": 401,
+        "catalog_updated_at": "2026-08-06T06:36:06+00:00",
+        "source_key": "vishiri/fantasia-archive:.cursor/skills/fantasia-flatten-database-schemas",
+        "family_key": "vishiri/fantasia-archive:fantasia-flatten-database-schemas",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "divinevideo/divine-mobile:sqlite-fts5-corruption-rebuild",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "sqlite-fts5-corruption-rebuild",
+        "author": "divinevideo",
+        "description": "Fix SQLite \"database disk image is malformed\" errors caused by corrupted FTS5 indexes.\nUse when: (1) UPDATE/INSERT fails with \"stepping, database disk image is malformed\" but\nPRAGMA integrity_check returns \"ok\", (2) Only specific records fail to update while others\nsucceed, (3) Records contain dirty text with tabs, newlines, or unusual characters that\nwere inserted into FTS5-indexed columns. The misleading error message suggests disk\ncorruption, but the actual issue is FTS5 index corruption from malformed text content.",
+        "content_language": "en",
+        "github_url": "https://github.com/divinevideo/divine-mobile/tree/main/.agents/skills/sqlite-fts5-corruption-rebuild",
+        "skillsmp_url": "https://skillsmp.com/creators/divinevideo/divine-mobile/agents-skills-sqlite-fts5-corruption-rebuild",
+        "repo_stars": 261,
+        "catalog_updated_at": "2026-08-07T14:43:49+00:00",
+        "source_key": "divinevideo/divine-mobile:.agents/skills/sqlite-fts5-corruption-rebuild",
+        "family_key": "divinevideo/divine-mobile:sqlite-fts5-corruption-rebuild",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "petrsvihlik/wopihost:codebase-audit",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "codebase-audit",
+        "author": "petrsvihlik",
+        "description": "Run a repeatable, multi-dimension code-quality / architecture / WOPI-spec-compliance audit of the WopiHost codebase and produce a tracker-ready findings report. Use this whenever the user wants to sweep the codebase for smells — code duplication, leaky abstractions, architectural inconsistencies, non-idiomatic .NET / Minimal-API patterns, wrong patterns, refactoring opportunities, security smells, performance issues, tech debt (TODOs, `#pragma` suppressions, hardcoded constants), test-coverage gaps, or WOPI spec non-compliance. Trigger on phrasings like \"audit the codebase\", \"find code smells\", \"tech-debt sweep\", \"is the codebase in good shape\", \"review the architecture\", \"find duplication / leaky abstractions / refactors\", \"check WOPI spec compliance\", or \"keep the codebase in top shape\" — even when the user doesn't say the word \"audit\". This is the standing health-check for the repo; prefer it over an ad-hoc grep sweep.",
+        "content_language": "en",
+        "github_url": "https://github.com/petrsvihlik/WopiHost/tree/master/.claude/skills/codebase-audit",
+        "skillsmp_url": "https://skillsmp.com/creators/petrsvihlik/wopihost/claude-skills-codebase-audit",
+        "repo_stars": 218,
+        "catalog_updated_at": "2026-07-03T19:34:09+00:00",
+        "source_key": "petrsvihlik/wopihost:.claude/skills/codebase-audit",
+        "family_key": "petrsvihlik/wopihost:codebase-audit",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jimliu/science-skills:self-awareness",
+      "queries": [
+        "Pragma agent expert bundle import local capability skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "self-awareness",
+        "author": "JimLiu",
+        "description": "Claude Science's own session database schema and SDK surface for introspection via host.query(). Load this when you need to query your own conversation history, token usage, cost accounting, execution log, or artifact metadata beyond what host.frames()/host.artifacts() provide — e.g. \"how many tokens has this session used\", \"what was my last tool call\", \"list every file I've written\", \"where are messages stored\", \"what tables can I query\", \"inspect frames.context_data\", or any time you're about to PRAGMA-probe the Claude Science metadata DB to discover its schema.",
+        "content_language": "en",
+        "github_url": "https://github.com/JimLiu/science-skills/tree/main/skills/self-awareness",
+        "skillsmp_url": "https://skillsmp.com/creators/jimliu/science-skills/skills-self-awareness",
+        "repo_stars": 216,
+        "catalog_updated_at": "2026-07-01T16:11:10+00:00",
+        "source_key": "jimliu/science-skills:skills/self-awareness",
+        "family_key": "jimliu/science-skills:self-awareness",
+        "aliases": [],
+        "query": "Pragma agent expert bundle import local capability skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-08-09",
+  "package": {
+    "name": "qiaomu-pragma-agency",
+    "version": "0.1.0",
+    "owner": "Qiaomu",
+    "maturity_tier": "governed",
+    "lifecycle_stage": "library",
+    "upstream_inspiration": "https://github.com/msitarzewski/agency-agents; https://github.com/pqpo/pragma; https://github.com/NousResearch/hermes-agent/tree/main/skills/autonomous-ai-agents/computer-use; https://github.com/Starchild-ai-agent/official-skills/tree/main/agent-import",
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "在 Windows 上把 msitarzewski/agency-agents 的专家目录预装进 pqpo/pragma，自动准备可直接使用的 Pragma Expert、Expert Team 和 Skill 能力，并创建桌面启动快捷方式。触发词包括“安装 Pragma 专家团”“把 agency-agents 导入 Pragma”“Pragma 有 unresolved local dependencies”“修复 Pragma Bundle”“创建 Pragma 桌面快捷方式”。适用于四类场景：首次安装 270 个 Agency Agents 专家、修复导入包仍需 setup 的依赖错误、从桌面快捷方式启动 Pragma、升级或复核本地专家包。执行前检查 Windows、Node.js >=22、Git、Codex Local Runtime 和现有 .pragma 数据；写入前备份，写入后验证专家/能力/Bundle 状态。不会打包或索取 API key、Cookie、密码，也不会把用户凭据上传到 GitHub。\n来源材料是上游 Markdown prompt/workflow 与 Pragma Bundle；适合安装、迁移、升级、修复和发布前复核这类流程化任务，不负责替用户提供模型凭据。",
+    "job_to_be_done": "在 Windows 上把 msitarzewski/agency-agents 的专家目录预装进 pqpo/pragma，自动准备可直接使用的 Pragma Expert、Expert Team 和 Skill 能力，并创建桌面启动快捷方式。触发词包括“安装 Pragma 专家团”“把 agency-agents 导入 Pragma”“Pragma 有 unresolved local dependencies”“修复 Pragma Bundle”“创建 Pragma 桌面快捷方式”。适用于四类场景：首次安装 270 个 Agency Agents 专家、修复导入包仍需 setup 的依赖错误、从桌面快捷方式启动 Pragma、升级或复核本地专家包。执行前检查 Windows、Node.js >=22、Git、Codex Local Runtime 和现有 .pragma 数据；写入前备份，写入后验证专家/能力/Bundle 状态。不会打包或索取 API key、Cookie、密码，也不会把用户凭据上传到 GitHub。\n来源材料是上游 Markdown prompt/workflow 与 Pragma Bundle；适合安装、迁移、升级、修复和发布前复核这类流程化任务，不负责替用户提供模型凭据。",
+    "target_users": [
+      "Qiaomu operator"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "exclusions": [],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "在 Windows 上安装 Pragma，并把 agency-agents 的 270 个专家默认导入进去",
+      "Pragma 提示 unresolved local dependencies，帮我修好后能创建 Mission",
+      "把 Pragma 的运行脚本放到桌面，双击就能启动",
+      "升级 Agency Agents Bundle，保留现有 .pragma 数据并检查 ready 状态",
+      "导入 manufacturing operations expert team 到 Pragma"
+    ],
+    "should_not_trigger": [
+      "只帮我分析 agency-agents 的某个专家提示词，不要安装 Pragma",
+      "为 Pragma 设计一个新的网页界面，不改本地运行环境",
+      "在 Linux 服务器上部署 Pragma SaaS"
+    ],
+    "near_neighbor": [
+      "在 Codex 中安装一个普通 Markdown Skill，不涉及 Pragma",
+      "给 Electron 应用创建快捷方式，但应用不是 Pragma",
+      "检查 Pragma 的源代码类型错误，但不导入专家 Bundle"
+    ]
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [
+      "references\\architecture.md",
+      "references\\maintenance.md",
+      "references\\troubleshooting.md",
+      "references\\upstream.md"
+    ],
+    "scripts": [],
+    "evals": [
+      "evals\\trigger_cases.json"
+    ],
+    "reports": [
+      "reports\\creation-handoff.md",
+      "reports\\prior-art-candidates.json",
+      "reports\\prior-art-research.md",
+      "reports\\skill-ir.json",
+      "reports\\trigger-eval.json",
+      "reports\\trust-boundary.md"
+    ]
+  },
+  "portability": {
+    "canonical_format": "agent-skills",
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible",
+      "vscode"
+    ],
+    "activation": {
+      "mode": "manual",
+      "paths": []
+    },
+    "execution": {
+      "context": "inline",
+      "shell": "powershell"
+    },
+    "trust": {
+      "source_tier": "bundled-and-reviewed",
+      "remote_inline_execution": "forbid",
+      "remote_metadata_policy": "allow read-only source review and explicit clone of named upstream repositories",
+      "generated_public_claims": "evidence-bound"
+    },
+    "permissions": {
+      "network": "named GitHub repositories and npm registry only",
+      "file_write": "user Pragma directory, %USERPROFILE%\\.pragma backup/state, and Desktop shortcut only",
+      "subprocess": "PowerShell, Git, Node.js, Corepack pnpm",
+      "interactive": "only when local runtime/authentication is missing"
+    },
+    "degradation": {
+      "openai": "metadata-adapter",
+      "claude": "neutral-source-plus-adapter",
+      "generic": "neutral-source",
+      "agent-skills-compatible": "canonical-source",
+      "vscode": "neutral-source-plus-review-notes"
+    }
+  },
+  "gates": {
+    "scaffold": [
+      "SKILL.md frontmatter",
+      "README hook and natural trigger examples",
+      "clear exclusions"
+    ],
+    "production": [
+      "agents/interface.yaml aligns with SKILL.md",
+      "evals/trigger_cases.json",
+      "scripts/validate_skill.py",
+      "Windows installation and verification scripts",
+      "root-only discoverable SKILL.md entrypoint"
+    ],
+    "library": [
+      "reports/skill-ir.json",
+      "reports/prior-art-research.md",
+      "portability and degradation notes"
+    ],
+    "governed": [
+      "trust boundary",
+      "rollback boundary",
+      "secret scan",
+      "public claim guard",
+      "feature-branch publication",
+      "remote discovery and clean install verification"
+    ]
+  },
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

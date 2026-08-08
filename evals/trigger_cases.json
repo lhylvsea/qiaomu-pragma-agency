@@ -1,0 +1,27 @@
+{
+  "recommended_threshold": 0.34,
+  "positive_concepts": {
+    "pragma": ["Pragma", "pragma"],
+    "agency": ["agency-agents", "Agency Agents", "专家"],
+    "action": ["安装", "导入", "修复", "创建", "升级", "启动", "运行"]
+  },
+  "description_required_concepts": ["pragma", "agency", "action"],
+  "negative_patterns": ["不要安装", "只帮我分析", "不涉及 Pragma", "不是 Pragma", "不导入专家 Bundle", "不改本地运行环境"],
+  "should_trigger": [
+    {"text": "在 Windows 上安装 Pragma，并把 agency-agents 的 270 个专家默认导入进去", "reason": "首次安装与专家 Bundle 配置"},
+    {"text": "Pragma 提示 unresolved local dependencies，帮我修好后能创建 Mission", "reason": "导入依赖修复"},
+    {"text": "把 Pragma 的运行脚本放到桌面，双击就能启动", "reason": "Windows 快捷方式与启动"},
+    {"text": "升级 Agency Agents Bundle，保留现有 .pragma 数据并检查 ready 状态", "reason": "升级、备份与验证"},
+    {"text": "导入 manufacturing operations expert team 到 Pragma", "reason": "可选制造运营团队 Bundle"}
+  ],
+  "should_not_trigger": [
+    {"text": "只帮我分析 agency-agents 的某个专家提示词，不要安装 Pragma", "reason": "仅内容分析"},
+    {"text": "为 Pragma 设计一个新的网页界面，不改本地运行环境", "reason": "产品设计任务"},
+    {"text": "在 Linux 服务器上部署 Pragma SaaS", "reason": "平台与托管边界不匹配"}
+  ],
+  "near_neighbor": [
+    {"text": "在 Codex 中安装一个普通 Markdown Skill，不涉及 Pragma", "reason": "Skill 安装但不是 Pragma 集成"},
+    {"text": "给 Electron 应用创建快捷方式，但应用不是 Pragma", "reason": "快捷方式相邻任务"},
+    {"text": "检查 Pragma 的源代码类型错误，但不导入专家 Bundle", "reason": "Pragma 开发任务"}
+  ]
+}
