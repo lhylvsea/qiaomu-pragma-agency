@@ -2,10 +2,10 @@
 
 ## 1. Result
 
-- Skill：`qiaomu-pragma-agency` `0.1.0`
+- Skill：`qiaomu-pragma-agency` `0.1.1`
 - 目标：在 Windows 上把 Agency Agents 的 270 个专家和 Skill 能力装入 Pragma，修复 Bundle 本地依赖，建立快捷方式并验证可用。
 - 本地路径：`work/skills/qiaomu-pragma-agency`
-- 发布状态：本地包已完成；GitHub 发布待完成用户仓库定位、Feature Branch/PR/Release 和隔离安装门禁。
+- 发布状态：已发布到 `https://github.com/lhylvsea/qiaomu-pragma-agency`；PR #1 已合并，`v0.1.0` 已发布，远端发现与干净目录安装已通过。本次 `v0.1.1` 用于同步本报告和 README 的最终状态。
 
 ## 2. Reference skills studied
 
@@ -31,7 +31,7 @@
 
 ## 5. Verification and limits
 
-- 已完成：上游来源检查、Bundle exporter 自校验（curated 24 resources、full 559、all-experts 542）、空白 Home runtime install、重复 verify、Skill 结构文件和触发用例编写。
-- 待完成：qiaomu `validate_skill.py`、IR、trigger eval、release check；GitHub Feature Branch/PR/Release；远端发现和干净 Home 通过 `npx skills add` 安装。
+- 已完成：上游来源检查、Bundle exporter 自校验（curated 24 resources、full 559、all-experts 542）、空白 Home runtime install、重复 verify、qiaomu `validate_skill.py`、IR、trigger eval、release check、GitHub Feature Branch/PR/Release、远端发现和干净目录通过 `npx skills add` 安装。
+- 当前版本变更：将 Windows `pnpm` shim、最终 GitHub 安装命令和已发布证据写入交接材料；不改变 Bundle 内容和 Pragma 数据格式。
 - 缺失证据：没有 provider-backed 质量评分、盲评或 270 个专家提示的人工质量对照；不把上游目录数量当作专业结论正确率。
 - 排除权限：不打包或上传 API key、Cookie、密码、Mission 数据；不删除用户 `.pragma`，不推送默认分支，不执行未审查上游安装钩子。
