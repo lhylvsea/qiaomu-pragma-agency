@@ -7,7 +7,7 @@
 发布后，在 Windows 上执行：
 
 ```powershell
-npx skills add lhylvsea/qiaomu-pragma-agency
+npx skills add lhylvsea/lvsea-pragma-agency
 ```
 
 也可以在支持 Agent Skills 的智能体中直接说：
@@ -69,7 +69,7 @@ python scripts/export_skill_ir.py . --output reports/skill-ir.json
 
 ## Troubleshooting
 
-If a Windows `predev` script reports that `pnpm` is not recognized, the bundled PowerShell scripts create a user-local `pnpm@10.12.1` shim under `%LOCALAPPDATA%\qiaomu-pragma-agency\bin`; no global package-manager configuration is required.
+If a Windows `predev` script reports that `pnpm` is not recognized, the bundled PowerShell scripts create a user-local `pnpm@10.12.1` shim under `%LOCALAPPDATA%\lvsea-pragma-agency\bin`; no global package-manager configuration is required.
 
 如果 Bundle 显示 `needs_setup`，先执行 `scripts/verify_pragma_agency.ps1` 查看 Runtime、Skill health 和 pending 引用；确认 Codex CLI 在同一 Windows 账户的 PATH 中，再重试安装。不要把 token 写进命令、报告或 Bundle。
 

@@ -10,7 +10,7 @@ $ErrorActionPreference = "Stop"
 $scriptRoot = (Resolve-Path -LiteralPath $PSScriptRoot).Path
 $pnpmShimScript = Join-Path $scriptRoot "ensure_pnpm_shim.ps1"
 & $pnpmShimScript | Out-Null
-$pnpmShimRoot = Join-Path $env:LOCALAPPDATA "qiaomu-pragma-agency\bin"
+$pnpmShimRoot = Join-Path $env:LOCALAPPDATA "lvsea-pragma-agency\bin"
 $env:Path = "$pnpmShimRoot;$env:Path"
 
 function Resolve-PragmaSource {

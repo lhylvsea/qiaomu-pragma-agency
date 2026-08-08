@@ -1,5 +1,5 @@
 ---
-name: qiaomu-pragma-agency
+name: lvsea-pragma-agency
 description: |
   在 Windows 上把 msitarzewski/agency-agents 的专家目录预装进 pqpo/pragma，自动准备可直接使用的 Pragma Expert、Expert Team 和 Skill 能力，并创建桌面启动快捷方式。触发词包括“安装 Pragma 专家团”“把 agency-agents 导入 Pragma”“Pragma 有 unresolved local dependencies”“修复 Pragma Bundle”“创建 Pragma 桌面快捷方式”。适用于四类场景：首次安装 270 个 Agency Agents 专家、修复导入包仍需 setup 的依赖错误、从桌面快捷方式启动 Pragma、升级或复核本地专家包。执行前检查 Windows、Node.js >=22、Git、Codex Local Runtime 和现有 .pragma 数据；写入前备份，写入后验证专家/能力/Bundle 状态。不会打包或索取 API key、Cookie、密码，也不会把用户凭据上传到 GitHub。
   来源材料是上游 Markdown prompt/workflow 与 Pragma Bundle；适合安装、迁移、升级、修复和发布前复核这类流程化任务，不负责替用户提供模型凭据。
