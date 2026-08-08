@@ -10,7 +10,7 @@
 npx skills add lhylvsea/qiaomu-pragma-agency
 ```
 
-把 `OWNER` 换成实际 GitHub 用户名。也可以在支持 Agent Skills 的智能体中直接说：
+也可以在支持 Agent Skills 的智能体中直接说：
 
 > 安装 Pragma Agency Agents，让 270 个专家开箱可用，创建桌面快捷方式并验证能新建 Mission。
 
