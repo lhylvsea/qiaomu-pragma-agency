@@ -29,7 +29,7 @@ if (-not $content.Contains($old)) {
   throw "Unsupported Pragma binding policy; refusing an unreviewed source rewrite: $target"
 }
 
-$backup = "$target.qiaomu-backup-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
+$backup = "$target.lvsea-backup-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
 Copy-Item -LiteralPath $target -Destination $backup -Force
 $updated = $content.Replace($old, $new.TrimEnd("`r", "`n"))
 [IO.File]::WriteAllText($target, $updated, [Text.UTF8Encoding]::new($false))

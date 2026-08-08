@@ -16,7 +16,7 @@ $scriptRoot = (Resolve-Path -LiteralPath $PSScriptRoot).Path
 $packageRoot = (Resolve-Path -LiteralPath (Join-Path $scriptRoot "..")).Path
 $pnpmShimScript = Join-Path $scriptRoot "ensure_pnpm_shim.ps1"
 & $pnpmShimScript | Out-Null
-$pnpmShimRoot = Join-Path $env:LOCALAPPDATA "qiaomu-pragma-agency\bin"
+$pnpmShimRoot = Join-Path $env:LOCALAPPDATA "lvsea-pragma-agency\bin"
 $env:Path = "$pnpmShimRoot;$env:Path"
 $bundlePath = Join-Path $packageRoot "assets\bundles\agency-agents-all.pragma"
 if ($Bundle -eq "manufacturing") { $bundlePath = Join-Path $packageRoot "assets\bundles\manufacturing-operations-team.pragma" }
@@ -59,7 +59,7 @@ if (Test-Path -LiteralPath $PragmaHome -PathType Container) {
   New-Item -ItemType Directory -Force -Path (Join-Path $backupPath "pragma") | Out-Null
 }
 $backupManifest = [ordered]@{
-  kind = "qiaomu-pragma-agency-backup"
+  kind = "lvsea-pragma-agency-backup"
   createdAt = (Get-Date).ToUniversalTime().ToString("o")
   pragmaHome = [IO.Path]::GetFullPath($PragmaHome)
   pragmaSource = $PragmaPath
