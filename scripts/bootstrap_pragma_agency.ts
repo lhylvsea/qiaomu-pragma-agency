@@ -10,6 +10,7 @@ const mode = process.env.PRAGMA_AGENCY_MODE ?? "verify";
 const runtimeId = process.env.PRAGMA_AGENCY_RUNTIME_ID ?? "codex";
 const providerId = process.env.PRAGMA_AGENCY_PROVIDER_ID ?? "openai";
 const modelId = process.env.PRAGMA_AGENCY_MODEL ?? "gpt-5.6-luna";
+const EXPECTED_AGENCY_COUNT = 275;
 
 if (sourceRoot === undefined || pragmaHome === undefined || bundlePath === undefined) {
   throw new Error("PRAGMA_SOURCE_ROOT, PRAGMA_HOME and PRAGMA_AGENCY_BUNDLE are required.");
@@ -271,16 +272,16 @@ async function installBundle(sourcePath: string): Promise<Installation> {
 if (mode === "install") {
   await installBundle(bundlePath);
   const state = await inspectState();
-  if (state.agencyExpertCount < 270 || state.agencySkillCount < 270) {
+  if (state.agencyExpertCount < EXPECTED_AGENCY_COUNT || state.agencySkillCount < EXPECTED_AGENCY_COUNT) {
     throw new Error(`Post-install count check failed: ${JSON.stringify(state)}`);
   }
   console.log(JSON.stringify({ ok: true, mode, state }, null, 2));
 } else if (mode === "verify") {
   const state = await inspectState();
   const allReady =
-    state.agencyExpertCount >= 270 &&
-    state.agencySkillCount >= 270 &&
-    state.readySkillCount >= 270 &&
+    state.agencyExpertCount >= EXPECTED_AGENCY_COUNT &&
+    state.agencySkillCount >= EXPECTED_AGENCY_COUNT &&
+    state.readySkillCount >= EXPECTED_AGENCY_COUNT &&
     state.agencyInstallations.length > 0 &&
     state.agencyInstallations.every((installation: any) => installation.status === "ready") &&
     state.pending.every((item) => item.pending === false);

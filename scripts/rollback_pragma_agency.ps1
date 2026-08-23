@@ -13,7 +13,7 @@ if (-not (Test-Path -LiteralPath (Join-Path $backup "backup-manifest.json") -Pat
   throw "Refusing rollback: backup-manifest.json is missing from $backup"
 }
 $manifest = Get-Content -LiteralPath (Join-Path $backup "backup-manifest.json") -Raw -Encoding utf8 | ConvertFrom-Json
-if ($manifest.kind -notin @("lvsea-pragma-agency-backup", "qiaomu-pragma-agency-backup")) { throw "Refusing rollback: unsupported backup kind." }
+if ($manifest.kind -notin @("lvsea-zhuanjia-backup", "lvsea-pragma-agency-backup", "qiaomu-pragma-agency-backup")) { throw "Refusing rollback: unsupported backup kind." }
 if ($manifest.pragmaHome -ne [IO.Path]::GetFullPath($PragmaHome)) {
   throw "Refusing rollback: backup belongs to $($manifest.pragmaHome), not $PragmaHome"
 }

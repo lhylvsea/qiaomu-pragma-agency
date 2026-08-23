@@ -18,7 +18,7 @@
   "results": {
     "should_trigger": [
       {
-        "prompt": "在 Windows 上安装 Pragma，并把 agency-agents 的 270 个专家默认导入进去",
+        "prompt": "在 Windows 上安装 Pragma，并把 agency-agents-zh 的 275 个专家默认导入进去",
         "family": "default",
         "expected_trigger": true,
         "predicted_trigger": true,
@@ -58,7 +58,7 @@
         "negative_pattern": null
       },
       {
-        "prompt": "升级 Agency Agents Bundle，保留现有 .pragma 数据并检查 ready 状态",
+        "prompt": "升级 agency-agents-zh Bundle，保留现有 .pragma 数据并检查 ready 状态",
         "family": "default",
         "expected_trigger": true,
         "predicted_trigger": true,

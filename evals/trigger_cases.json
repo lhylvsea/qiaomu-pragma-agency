@@ -2,16 +2,16 @@
   "recommended_threshold": 0.34,
   "positive_concepts": {
     "pragma": ["Pragma", "pragma"],
-    "agency": ["agency-agents", "Agency Agents", "专家"],
+    "agency": ["agency-agents", "agency-agents-zh", "Agency Agents", "专家"],
     "action": ["安装", "导入", "修复", "创建", "升级", "启动", "运行"]
   },
   "description_required_concepts": ["pragma", "agency", "action"],
   "negative_patterns": ["不要安装", "只帮我分析", "不涉及 Pragma", "不是 Pragma", "不导入专家 Bundle", "不改本地运行环境"],
   "should_trigger": [
-    {"text": "在 Windows 上安装 Pragma，并把 agency-agents 的 270 个专家默认导入进去", "reason": "首次安装与专家 Bundle 配置"},
+    {"text": "在 Windows 上安装 Pragma，并把 agency-agents-zh 的 275 个专家默认导入进去", "reason": "首次安装与专家 Bundle 配置"},
     {"text": "Pragma 提示 unresolved local dependencies，帮我修好后能创建 Mission", "reason": "导入依赖修复"},
     {"text": "把 Pragma 的运行脚本放到桌面，双击就能启动", "reason": "Windows 快捷方式与启动"},
-    {"text": "升级 Agency Agents Bundle，保留现有 .pragma 数据并检查 ready 状态", "reason": "升级、备份与验证"},
+    {"text": "升级 agency-agents-zh Bundle，保留现有 .pragma 数据并检查 ready 状态", "reason": "升级、备份与验证"},
     {"text": "导入 manufacturing operations expert team 到 Pragma", "reason": "可选制造运营团队 Bundle"}
   ],
   "should_not_trigger": [

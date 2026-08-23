@@ -10,6 +10,31 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class SkillPackageTests(unittest.TestCase):
+    def test_main_bundle_contains_expected_pragma_resources(self) -> None:
+        bundle = ROOT / "assets" / "bundles" / "agency-agents-all.pragma"
+        with zipfile.ZipFile(bundle) as archive:
+            names = set(archive.namelist())
+            manifest = json.loads(archive.read("bundle.json"))
+        self.assertEqual(manifest["schemaVersion"], "pragma.bundle/v1")
+        self.assertEqual(len(manifest["requirements"]), 276)
+        self.assertEqual(
+            sum(name.startswith("project/capabilities/") and name.endswith(".pragma.yaml") for name in names),
+            275,
+        )
+        self.assertEqual(
+            sum(name.startswith("project/experts/") and name.endswith(".pragma.yaml") for name in names),
+            275,
+        )
+        self.assertEqual(
+            sum(name.startswith("project/teams/") and name.endswith(".pragma.yaml") for name in names),
+            1,
+        )
+        self.assertEqual(
+            sum(name.startswith("project/runtime-profiles/") and name.endswith(".pragma.yaml") for name in names),
+            1,
+        )
+        self.assertEqual(sum(name.startswith("assets/") and name.endswith("/descriptor.json") for name in names), 275)
+
     def test_manifest_matches_bundled_assets(self) -> None:
         manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
         assets = manifest["bundled_assets"]
