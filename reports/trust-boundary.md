@@ -2,13 +2,13 @@
 
 ## Trusted inputs
 
-- `agency-agents` 与 `pragma` 的固定上游仓库地址和本次记录的源提交。
+- `agency-agents-zh` 与 `pragma` 的固定上游仓库地址和本次记录的源提交。
 - Skill 包内已生成并经过 Pragma exporter 自校验的 `.pragma` Bundle。
 - Windows 本机的 Node.js、Git、Corepack 和 Codex CLI；只读取其版本/可用性，不读取凭据内容。
 
 ## Writes and network
 
-- 网络：克隆/读取 `msitarzewski/agency-agents` 与 `pqpo/pragma`，以及安装 Pragma 依赖时访问 npm registry。
+- 网络：克隆/读取 `jnMetaCode/agency-agents-zh` 与 `pqpo/pragma`，以及安装 Pragma 依赖时访问 npm registry。
 - 文件写入：Pragma 源码目录、`%USERPROFILE%\.pragma`、时间戳备份目录和 Desktop `.lnk`。
 - 不写入：API keys、Cookie、密码、Codex token、Mission 内容或 GitHub secrets。
 

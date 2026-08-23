@@ -1,37 +1,30 @@
 # Creation handoff
 
-## 1. Result
+## Result
 
-- Skill：`lvsea-pragma-agency` `0.2.0`
-- 目标：在 Windows 上把 Agency Agents 的 270 个专家和 Skill 能力装入 Pragma，修复 Bundle 本地依赖，建立快捷方式并验证可用。
-- 本地路径：`work/skills/lvsea-pragma-agency`
-- 发布状态：仓库已重命名为 `https://github.com/lhylvsea/lvsea-pragma-agency`；既有 `v0.1.1` 保留，新名称以 `v0.2.0` 发布。此次变更只重命名公开 Skill 身份和本地 shim/备份标识，保留旧备份格式回滚兼容。
+- Skill：`lvsea-zhuanjia` `0.3.0`
+- 目标：把 `jnMetaCode/agency-agents-zh` 的 275 个专家整合为可导入 Pragma 的 Windows Bundle，同时保留安装、修复、启动、验证和回滚闭环。
+- 上游快照：`83248ab15a78f9ddad897369c8d0be873653574a`
+- 主 Bundle：`assets/bundles/agency-agents-all.pragma`
 
-## 2. Reference skills studied
+## Integration decisions
 
-- `hermes-agent/computer-use`：学习状态变化后的可观察验证；对应 `scripts/verify_pragma_agency.ps1`、启动进程/端口检查和 post-install health 契约。遥测信号是 skills.sh installs `163`、SkillsMP repo stars `227004`，不表示质量评分。
-- `official-skills/agent-import`：学习导入前读取 Manifest、按显式决策执行、导入后核对和清理；对应 Bundle inspect、备份 Manifest、幂等安装与回滚脚本。遥测信号是 skills.sh installs `173`，不表示质量评分。
+- 保留既有 Bundle 文件名、PowerShell 文件名和 `PRAGMA_AGENCY_*` 环境变量，降低升级成本。
+- 将旧的 270 个来源快照替换为 275 个 `agency-agents-zh` 专家；每个角色包含一个 `Expert`、一个 `Capability` 和一个 Skill payload。
+- 使用唯一的 `All Agency Experts` 根团队；`specialized/agents-orchestrator.md` 作为协调专家，其余专家作为成员。
+- 继续保留可选的 11 人制造运营团队。
+- 公开身份统一为 `lvsea-zhuanjia`；旧的备份 kind 仍被回滚脚本接受。
 
-## 3. Absorbed and rejected
+## Evidence recorded
 
-- 保留：Manifest/Bundle 预检、写入前备份、写入后状态验证、显式失败边界。
-- 适配：从通用 Agent 导入改为 Pragma `startImport`、`RuntimeProfile`、Capability payload 和 Windows PowerShell；把 GUI 观察改为项目 revision、安装记录和 pending 引用检查。
-- 舍弃：远程内联执行、RDP/桌面控制、自动上传用户凭据；这些都不属于本次本地 Pragma 安装闭环。
-- 原创：将 270 个上游 Markdown Skill 打包为单一 `All Agency Experts` 根团队，并把 Pragma 当前 `codex/openai/gpt-5.6-luna` Runtime 适配、绑定兼容补丁、快捷方式和回滚串成一个 Skill。
+- 上游 `scripts/check-counts.mjs`：275 个角色。
+- Pragma 导出/重新加载：`275 Capability + 275 Expert + 1 RuntimeProfile + 1 ExpertTeam`。
+- Bundle requirements：276（275 个 Skill binding + 1 个 Runtime）。
+- 生成 Bundle 指纹：`5f5c7ad386c3632f3d616adf923b213b65b7f88b5a68a53e07e5e593191a37b9`。
+- Python 包测试、GitHub PR/Release、远端发现和干净安装：由发布前门禁继续确认，未通过前不应宣称发布完成。
 
-## 4. Advantages and highlights
+## Limits
 
-| 类型 | 证据与说明 |
-|---|---|
-| design advantage | 单一 Bundle 根入口一次安装 270 个 Expert/270 个 Skill；可选制造运营精选团队，降低初次选择成本。 |
-| design advantage | 运行脚本把 `.pragma` 备份、Bundle 导入、快捷方式、验证和回滚放在同一 Windows 工作流内。 |
-| validated advantage | 空白 Pragma Home 实测导入后 `resourceCount=542`、`agencyExpertCount=270`、`agencySkillCount=270`、`readySkillCount=270`、安装 `ready`、`pending=false`。 |
-| validated advantage | 同一隔离 Home 的第二次验证通过，未重复导入，证明相同 Bundle 指纹的幂等路径可用。 |
-| hypothesis | 对未来不同 Codex 模型/Pragma 版本，运行时解析与可选环境覆盖预期能降低人工 setup；尚未在多个版本和多个模型上做兼容矩阵。 |
-
-## 5. Verification and limits
-
-- 已完成：上游来源检查、Bundle exporter 自校验（curated 24 resources、full 559、all-experts 542）、空白 Home runtime install、重复 verify、qiaomu `validate_skill.py`、IR、trigger eval、release check、GitHub Feature Branch/PR/Release、远端发现和干净目录通过 `npx skills add` 安装。
-- 当前版本变更：将公开身份、Windows `pnpm` shim、GitHub 安装命令和回滚备份标识统一为 `lvsea-pragma-agency`；不改变 Bundle 内容和 Pragma 数据格式。
-- 缺失证据：没有 provider-backed 质量评分、盲评或 270 个专家提示的人工质量对照；不把上游目录数量当作专业结论正确率。
-- 排除权限：不打包或上传 API key、Cookie、密码、Mission 数据；不删除用户 `.pragma`，不推送默认分支，不执行未审查上游安装钩子。
+- 没有 provider-backed 质量评分、人工盲评或 275 个专家提示的专业正确率证据。
+- Runtime 是否可用取决于用户本机 Codex CLI、Pragma 版本和模型认证状态。
+- Pragma 上游许可证对托管服务和商业嵌入有额外边界，发布者需自行复核。

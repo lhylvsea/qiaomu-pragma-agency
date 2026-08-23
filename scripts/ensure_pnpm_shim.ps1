@@ -8,7 +8,7 @@ $corepack = Get-Command corepack -ErrorAction SilentlyContinue
 if ($null -eq $corepack) { throw "Corepack is required to run Pragma." }
 if ([string]::IsNullOrWhiteSpace($env:LOCALAPPDATA)) { throw "LOCALAPPDATA is required on Windows." }
 
-$shimRoot = Join-Path $env:LOCALAPPDATA "lvsea-pragma-agency\bin"
+$shimRoot = Join-Path $env:LOCALAPPDATA "lvsea-zhuanjia\bin"
 New-Item -ItemType Directory -Force -Path $shimRoot | Out-Null
 
 $corepackPath = $corepack.Source
